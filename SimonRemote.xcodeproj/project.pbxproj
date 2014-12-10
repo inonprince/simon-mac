@@ -63,6 +63,8 @@
 		2FD6924F18DD06CD00C8A1C9 /* System-volume_down.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 2FD6924D18DD06CD00C8A1C9 /* System-volume_down.scpt */; };
 		2FD6925018DD06CD00C8A1C9 /* System-volume_up.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 2FD6924E18DD06CD00C8A1C9 /* System-volume_up.scpt */; };
 		2FD6929318DFD57200C8A1C9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD6929218DFD57200C8A1C9 /* SystemConfiguration.framework */; };
+		A3B0781D1A38DD31003EC2EA /* iTunes-volume_down.scpt in Resources */ = {isa = PBXBuildFile; fileRef = A3B0781B1A38DD31003EC2EA /* iTunes-volume_down.scpt */; };
+		A3B0781E1A38DD31003EC2EA /* iTunes-volume_up.scpt in Resources */ = {isa = PBXBuildFile; fileRef = A3B0781C1A38DD31003EC2EA /* iTunes-volume_up.scpt */; };
 		A3F107D51A37FD0A00444CAA /* AirPlay-info.scpt in Resources */ = {isa = PBXBuildFile; fileRef = A3F107D21A37FCDA00444CAA /* AirPlay-info.scpt */; };
 		DD4F7C0913C30F9F00825C6E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4F7C0813C30F9F00825C6E /* Cocoa.framework */; };
 		DD4F7C1513C30F9F00825C6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4F7C1413C30F9F00825C6E /* main.m */; };
@@ -147,6 +149,8 @@
 		2FD6924D18DD06CD00C8A1C9 /* System-volume_down.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; name = "System-volume_down.scpt"; path = "SimonRemote/Scripts/System/System-volume_down.scpt"; sourceTree = "<group>"; };
 		2FD6924E18DD06CD00C8A1C9 /* System-volume_up.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; name = "System-volume_up.scpt"; path = "SimonRemote/Scripts/System/System-volume_up.scpt"; sourceTree = "<group>"; };
 		2FD6929218DFD57200C8A1C9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A3B0781B1A38DD31003EC2EA /* iTunes-volume_down.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; name = "iTunes-volume_down.scpt"; path = "SimonRemote/Scripts/iTunes/iTunes-volume_down.scpt"; sourceTree = "<group>"; };
+		A3B0781C1A38DD31003EC2EA /* iTunes-volume_up.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; name = "iTunes-volume_up.scpt"; path = "SimonRemote/Scripts/iTunes/iTunes-volume_up.scpt"; sourceTree = "<group>"; };
 		A3F107D21A37FCDA00444CAA /* AirPlay-info.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AirPlay-info.scpt"; path = "SimonRemote/Scripts/AirPlay/AirPlay-info.scpt"; sourceTree = "<group>"; };
 		DD4F7C0413C30F9F00825C6E /* SimonRemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimonRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4F7C0813C30F9F00825C6E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -204,6 +208,8 @@
 		2F921E1918DA13EF006E2934 /* iTunes */ = {
 			isa = PBXGroup;
 			children = (
+				A3B0781B1A38DD31003EC2EA /* iTunes-volume_down.scpt */,
+				A3B0781C1A38DD31003EC2EA /* iTunes-volume_up.scpt */,
 				2FAB73951906D88700F36112 /* iTunes-next.scpt */,
 				2FAB73961906D88700F36112 /* iTunes-previous.scpt */,
 				2F21FA871904C812002DD68B /* iTunes-disable_shuffle.scpt */,
@@ -506,11 +512,13 @@
 				2F921E1718DA13DA006E2934 /* iTunes-play.scpt in Resources */,
 				2FAB73A01906D8B200F36112 /* Keynote-previous.scpt in Resources */,
 				2FCFACA919119C8D00508B0A /* System-info.scpt in Resources */,
+				A3B0781D1A38DD31003EC2EA /* iTunes-volume_down.scpt in Resources */,
 				2FAB73941906D87900F36112 /* Spotify-previous.scpt in Resources */,
 				2F9B1D9018D2B82700A41633 /* StatusHighlighted@2x.png in Resources */,
 				2F9B1D9118D2B82700A41633 /* MainMenu.xib in Resources */,
 				2F80475B18D3FC9F0078905C /* bottomleft.png in Resources */,
 				2F21FA891904C812002DD68B /* iTunes-disable_shuffle.scpt in Resources */,
+				A3B0781E1A38DD31003EC2EA /* iTunes-volume_up.scpt in Resources */,
 				2FAB738D19060B0C00F36112 /* Spotify-disable_shuffle.scpt in Resources */,
 				2FC01AA61922DCC7007D56F6 /* Status.png in Resources */,
 				2F80476918D3FCB50078905C /* Spotify-pause.scpt in Resources */,

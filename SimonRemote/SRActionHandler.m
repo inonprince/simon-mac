@@ -39,10 +39,10 @@ static bool string_equal(NSString *one, NSString *two) {
             [SRRunner runScriptFromFile:@"iTunes-playpause"];
             
         } else if (string_equal(command, @"volume_up")) {
-            [SRRunner runScriptFromFile:@"System-volume_up"];
+            [SRRunner runScriptFromFile:@"iTunes-volume_up"];
             
         } else if (string_equal(command, @"volume_down")) {
-            [SRRunner runScriptFromFile:@"System-volume_down"];
+            [SRRunner runScriptFromFile:@"iTunes-volume_down"];
             
         } else if (string_equal(command, @"enable_shuffle")) {
             NSLog(@"enable_shufle ran\n");

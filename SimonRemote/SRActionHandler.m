@@ -54,7 +54,26 @@ static bool string_equal(NSString *one, NSString *two) {
             [SRRunner runScriptFromFile:@"iTunes-disable_shuffle"];
             [NSThread sleepForTimeInterval:1.0f];
         }
-        
+
+        /* AirPlay */
+    } else if (string_equal(app, @"AirPlay")) {
+        if([command hasPrefix:@"set-"]) {
+            NSString* deviceName = nil;
+            deviceName = [command substringFromIndex:4];
+            //[SRRunner runScriptFromFile:@"iTunes-previous"];
+            NSString *script = @"set selecteddevice to \"%@\"\n"
+            "tell application \"iTunes\"\n"
+            "set apDevices to (get every AirPlay device whose available is true)\n"
+            "set apNames to (get name of every AirPlay device whose available is true)\n"
+            "set apChoices to {}\n"
+            "repeat with i from 1 to length of apNames\n"
+            "if item i of apNames is selecteddevice then set end of apChoices to item i of apDevices\n"
+            "end repeat\n"
+            "set cur rent AirPlay devices to apChoices\n"
+            "end tell";
+            [SRRunner runScriptFromString:[NSString stringWithFormat:script, deviceName]];
+        }
+
         /* Spotify */
     } else if (string_equal(app, @"Spotify")) {
         
@@ -169,6 +188,8 @@ static bool string_equal(NSString *one, NSString *two) {
 {
     if (string_equal(app, @"iTunes")) {
         return [SRRunner runScriptFromFile:@"iTunes-info"];
+    } else if (string_equal(app, @"AirPlay")) {
+        return [SRRunner runScriptFromFile:@"AirPlay-info"];
     } else if (string_equal(app, @"Spotify")) {
         return [SRRunner runScriptFromFile:@"Spotify-info"];
     } else if (string_equal(app, @"PowerPoint")) {

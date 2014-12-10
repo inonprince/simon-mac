@@ -63,6 +63,7 @@
 		2FD6924F18DD06CD00C8A1C9 /* System-volume_down.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 2FD6924D18DD06CD00C8A1C9 /* System-volume_down.scpt */; };
 		2FD6925018DD06CD00C8A1C9 /* System-volume_up.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 2FD6924E18DD06CD00C8A1C9 /* System-volume_up.scpt */; };
 		2FD6929318DFD57200C8A1C9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD6929218DFD57200C8A1C9 /* SystemConfiguration.framework */; };
+		A3F107D51A37FD0A00444CAA /* AirPlay-info.scpt in Resources */ = {isa = PBXBuildFile; fileRef = A3F107D21A37FCDA00444CAA /* AirPlay-info.scpt */; };
 		DD4F7C0913C30F9F00825C6E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4F7C0813C30F9F00825C6E /* Cocoa.framework */; };
 		DD4F7C1513C30F9F00825C6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4F7C1413C30F9F00825C6E /* main.m */; };
 		DD4F7C1C13C30F9F00825C6E /* ApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4F7C1B13C30F9F00825C6E /* ApplicationDelegate.m */; };
@@ -146,6 +147,7 @@
 		2FD6924D18DD06CD00C8A1C9 /* System-volume_down.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; name = "System-volume_down.scpt"; path = "SimonRemote/Scripts/System/System-volume_down.scpt"; sourceTree = "<group>"; };
 		2FD6924E18DD06CD00C8A1C9 /* System-volume_up.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; name = "System-volume_up.scpt"; path = "SimonRemote/Scripts/System/System-volume_up.scpt"; sourceTree = "<group>"; };
 		2FD6929218DFD57200C8A1C9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A3F107D21A37FCDA00444CAA /* AirPlay-info.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AirPlay-info.scpt"; path = "SimonRemote/Scripts/AirPlay/AirPlay-info.scpt"; sourceTree = "<group>"; };
 		DD4F7C0413C30F9F00825C6E /* SimonRemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimonRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4F7C0813C30F9F00825C6E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DD4F7C0B13C30F9F00825C6E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -189,6 +191,7 @@
 		2F8046F718D3DDD40078905C /* Scripts */ = {
 			isa = PBXGroup;
 			children = (
+				A3F107D41A37FCF400444CAA /* AirPlay */,
 				2FAB73991906D89F00F36112 /* Keynote */,
 				2FD6924C18DD065000C8A1C9 /* System */,
 				2F921E2F18DA4E99006E2934 /* PowerPoint */,
@@ -296,6 +299,14 @@
 				2FD6924E18DD06CD00C8A1C9 /* System-volume_up.scpt */,
 			);
 			name = System;
+			sourceTree = "<group>";
+		};
+		A3F107D41A37FCF400444CAA /* AirPlay */ = {
+			isa = PBXGroup;
+			children = (
+				A3F107D21A37FCDA00444CAA /* AirPlay-info.scpt */,
+			);
+			name = AirPlay;
 			sourceTree = "<group>";
 		};
 		DD4F7BF913C30F9F00825C6E = {
@@ -471,6 +482,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3F107D51A37FD0A00444CAA /* AirPlay-info.scpt in Resources */,
 				2F921E2A18DA4E72006E2934 /* PowerPoint-black_screen.scpt in Resources */,
 				2FD6923E18DBEB0800C8A1C9 /* iTunes-playpause.scpt in Resources */,
 				2F921E3318DA52E7006E2934 /* PowerPoint-previous.scpt in Resources */,
@@ -638,8 +650,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -662,8 +674,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

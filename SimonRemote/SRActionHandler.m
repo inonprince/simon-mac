@@ -69,7 +69,7 @@ static bool string_equal(NSString *one, NSString *two) {
             "repeat with i from 1 to length of apNames\n"
             "if item i of apNames is selecteddevice then set end of apChoices to item i of apDevices\n"
             "end repeat\n"
-            "set cur rent AirPlay devices to apChoices\n"
+            "set current AirPlay devices to apChoices\n"
             "end tell";
             [SRRunner runScriptFromString:[NSString stringWithFormat:script, deviceName]];
         }
